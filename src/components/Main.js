@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Index from '../pages/Index';
@@ -34,7 +35,7 @@ function Main(props) {
     }
   };
 
-  const updateCats = async (cat, id) => {
+  const updateCats = async (cat) => {
     try {
       await fetch(API_BASE_URL + '/' + cat._id, {
         method: 'PUT',
